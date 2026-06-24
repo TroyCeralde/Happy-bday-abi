@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday Mikaela</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+  <div id="aurora"></div>
+
+  <div id="introOverlay" class="intro-overlay">
+    <div class="intro-card-inner">
+      <h2 class="intro-card-title">Happy Birthday</h2>
+      <p class="intro-card-name">Mikaela</p>
+      <p class="intro-card-sub">A beautiful soul deserves a beautiful celebration</p>
+      <div class="intro-actions">
+        <button id="introBtn" class="intro-btn">Click Me</button>
+      </div>
+      <input id="audioUpload" type="file" accept="audio/*" style="display:none">
+    </div>
+    <div id="introHeart" class="intro-heart" aria-hidden="true"></div>
+  </div>
+
+  <audio id="bgAudio" src="C:\Users\jasen\OneDrive\Documents\GitHub\Happy-bday-abi\Ebe Dancel - Bawat Daan (Lyrics) [05Vm4pQiTsE].mp3" preload="auto"></audio>
+
+  <main class="center">
+    <section class="card" id="hero">
+      <div class="moonlight"></div>
+      <div class="content">
+        <h1 class="title">🎉 Happy Birthday Mikaela 🎂</h1>
+        <p class="subtitle">"A beautiful soul deserves a beautiful celebration."</p>
+
+        <div class="message">
+          <!-- Dynamic message populated by script -->
+        </div>
+
+        <!-- controls removed per design preference -->
+      </div>
+
+      <div class="cake-wrap">
+        <div class="cake">
+          <div class="layer base"></div>
+          <div class="layer cream"></div>
+          <div class="layer top"></div>
+          <div class="candles">
+            <span class="candle" style="--i:0"><span class="wick"></span><span class="flame"></span></span>
+            <span class="candle" style="--i:1"><span class="wick"></span><span class="flame"></span></span>
+            <span class="candle" style="--i:2"><span class="wick"></span><span class="flame"></span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="floating-wishes"></div>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <footer class="footer">Made with ❤️ for Mikaela's Special Day</footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
